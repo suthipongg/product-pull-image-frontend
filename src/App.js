@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate, useParams } from "react-router-dom";
 import React from "react";
 
-const API_BASE = "https://product-pull-image-backend.onrender.com/";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 // Common styles object for reusability
 const styles = {
